@@ -1,6 +1,7 @@
 # Environment variables
 .env
 .env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -8,7 +9,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -25,12 +25,34 @@ wheels/
 .installed.cfg
 *.egg
 
-# IDE
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
-
-# OS
 .DS_Store
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
